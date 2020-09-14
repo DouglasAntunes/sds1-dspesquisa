@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    hibernate:      ddl-auto: none
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            create-source: metadata
+          scripts:
+            action: create
+            create-target: create.sql
+
+      hibernate:
+        hbm2ddl:
+          delimiter: ;
+        jdbc:
+          lob:
+            non_contextual_creation: true
+          
+
+  datasource:
+    url: jdbc:postgresql://docker-apps.home.local:5432/dspesquisa
+    username: sds1
+    password: sds1
