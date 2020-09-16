@@ -6,6 +6,8 @@ import io.github.douglasantunes.dspesquisa.entities.Game;
 import io.github.douglasantunes.dspesquisa.entities.enums.Platform;
 
 public class GameDTO implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private Long id;
 	private String title;
 	private Platform platform;
