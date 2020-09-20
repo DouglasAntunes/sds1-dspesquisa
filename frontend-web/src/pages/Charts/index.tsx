@@ -7,6 +7,7 @@ import './styles.css';
 
 import Filters from '../../components/Filters';
 import { buildBarSeries, getGenreChartData, getPlatformChartData } from './helpers';
+import { BASE_URL } from '../../config';
 
 
 type PieChartData = {
@@ -22,8 +23,6 @@ type BarChartData = {
 const initialPieData = {
     labels: [], series: []
 };
-
-const BASE_URL = "http://localhost:8080";
 
 const Charts = () => {
     const [barChartData, setBarChartData] = useState<BarChartData[]>([]);

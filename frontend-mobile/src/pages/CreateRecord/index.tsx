@@ -7,13 +7,12 @@ import RNPickerSelect from 'react-native-picker-select';
 import { FontAwesome5 as Icon } from '@expo/vector-icons';
 import axios from 'axios';
 import { RectButton } from 'react-native-gesture-handler';
+import { BASE_URL } from '../../config';
 
 const gameListPlaceholder = {
     label: "Selecione o game",
     value: null
 };
-
-const BASE_URL = "http://blackburn-pc.home.local:8080";
 
 const mapSelectValues = (games: Game[]) => {
     return games.map(game => ({

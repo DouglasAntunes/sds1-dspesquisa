@@ -7,8 +7,7 @@ import Pagination from './Pagination';
 import Filters from '../../components/Filters';
 
 import './styles.css';
-
-const BASE_URL = "http://localhost:8080";
+import { BASE_URL } from '../../config';
 
 const Records = () =>  {
     const [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
